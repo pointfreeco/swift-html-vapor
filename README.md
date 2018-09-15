@@ -30,7 +30,14 @@ try app.run()
 
 ## Take it for a spin
 
-We've included a sample Vapor application in this repo to show off its usage. Simply perform the following:
+We've included a sample Vapor application in this repo to show off its usage. To run the app immediately, simply do:
+
+* `swift run HtmlVaporSupportExample`
+* Open your browser to `http://localhost:8080`
+
+The HTML for that page is constructed and rendered with swift-html!
+
+If you want to run the app in Xcode so that you can play around with the HTML, try this:
 
 * `git clone https://github.com/pointfreeco/swift-html-vapor`
 * `cd swift-html-vapor`
@@ -38,8 +45,6 @@ We've included a sample Vapor application in this repo to show off its usage. Si
 * Select the `HtmlVaporSupportExample` target
 * Build and run `cmd+R`
 * Open your browser to `http://localhost:8080`
-
-The HTML for that page is constructed and rendered with swift-html!
 
 ## Installation
 
