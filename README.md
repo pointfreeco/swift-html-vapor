@@ -10,7 +10,7 @@
 
 The most popular choice for rendering HTML in a Vapor web app is to use the Leaf templating language, but it exposes your application to **runtime errors** and **invalid HTML**. Our plugin prevents these runtime issues at compile-time by embedding HTML directly into Swift’s powerful type system. It uses the [swift-html](https://github.com/pointfreeco/swift-html) DSL for constructing HTML documents using plain Swift data structures.
 
-## Example
+## Usage
 
 To use the plugin all you have to do is return a `Node` value from your router callback:
 
@@ -27,6 +27,19 @@ router.get("/") { _ in
 
 try app.run()
 ```
+
+## Take it for a spin
+
+We've included a sample Vapor application in this repo to show off its usage. Simply perform the following:
+
+* `git clone https://github.com/pointfreeco/swift-html-vapor`
+* `cd swift-html-vapor`
+* `make xcodeproj`
+* Select the `HtmlVaporSupportExample` target
+* Build and run `cmd+R`
+* Open your browser to `http://localhost:8080`
+
+The HTML for that page is constructed and rendered with swift-html!
 
 ## Installation
 
