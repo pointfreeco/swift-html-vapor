@@ -1,6 +1,6 @@
 # swift-html-vapor
 
-[![Swift 4.1](https://img.shields.io/badge/swift-4.1-ED523F.svg?style=flat)](https://swift.org/download/)
+[![Swift 5](https://img.shields.io/badge/swift-5-ED523F.svg?style=flat)](https://swift.org/download/)
 [![Linux CI](https://img.shields.io/travis/pointfreeco/swift-html-vapor/master.svg?label=linux)](https://travis-ci.org/pointfreeco/swift-html-vapor)
 [![@pointfreeco](https://img.shields.io/badge/contact-@pointfreeco-5AA9E7.svg?style=flat)](https://twitter.com/pointfreeco)
 
@@ -22,7 +22,7 @@ let app = try Application()
 let router = try app.make(Router.self)
 
 router.get("/") { _ in
-  h1(["Hello, type-safe HTML on Vapor!"])
+  Node.h1("Hello, type-safe HTML on Vapor!")
 }
 
 try app.run()
@@ -52,7 +52,7 @@ If you want to use swift-html-vapor in a project that uses [SwiftPM](https://swi
 
 ``` swift
 dependencies: [
-  .package(url: "https://github.com/pointfreeco/swift-html-vapor.git", from: "0.1.0")
+  .package(url: "https://github.com/pointfreeco/swift-html-vapor.git", from: "0.3.0")
 ]
 ```
 
