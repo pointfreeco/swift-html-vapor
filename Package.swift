@@ -1,5 +1,4 @@
-// swift-tools-version:4.0
-
+// swift-tools-version:5.0
 import PackageDescription
 
 let package = Package(
@@ -13,7 +12,7 @@ let package = Package(
       targets: ["HtmlVaporSupportExample"]),
     ],
   dependencies: [
-    .package(url: "https://github.com/pointfreeco/swift-html.git", from: "0.1.1"),
+    .package(url: "https://github.com/pointfreeco/swift-html.git", from: "0.3.0"),
     .package(url: "https://github.com/vapor/vapor.git", from: "3.0.0"),
     ],
   targets: [

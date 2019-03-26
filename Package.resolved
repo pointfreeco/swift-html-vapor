@@ -2,12 +2,21 @@
   "object": {
     "pins": [
       {
+        "package": "AEXML",
+        "repositoryURL": "https://github.com/tadija/AEXML",
+        "state": {
+          "branch": null,
+          "revision": "54bb8ea6fb693dd3f92a89e5fcc19e199fdeedd0",
+          "version": "4.3.3"
+        }
+      },
+      {
         "package": "Console",
         "repositoryURL": "https://github.com/vapor/console.git",
         "state": {
           "branch": null,
-          "revision": "5b9796d39f201b3dd06800437abd9d774a455e57",
-          "version": "3.0.2"
+          "revision": "74cfbea629d4aac34a97cead2447a6870af1950b",
+          "version": "3.1.1"
         }
       },
       {
@@ -15,8 +24,8 @@
         "repositoryURL": "https://github.com/vapor/core.git",
         "state": {
           "branch": null,
-          "revision": "ad776ec35f0a811672128eaf796fb3de10a46d3f",
-          "version": "3.4.2"
+          "revision": "7fe113f5e857c690b25960ccd6d9430cd34d038d",
+          "version": "3.7.1"
         }
       },
       {
@@ -24,8 +33,8 @@
         "repositoryURL": "https://github.com/vapor/crypto.git",
         "state": {
           "branch": null,
-          "revision": "4b85405430df1892ee3aa1554bdb477e96cf46ad",
-          "version": "3.2.0"
+          "revision": "45bb12d13cdec80dbd1cc0685ea002e51ab83439",
+          "version": "3.3.2"
         }
       },
       {
@@ -33,8 +42,8 @@
         "repositoryURL": "https://github.com/vapor/database-kit.git",
         "state": {
           "branch": null,
-          "revision": "3a17dbbe9be5f8c37703e4b7982c1332ad6b00c4",
-          "version": "1.3.1"
+          "revision": "8f352c8e66dab301ab9bfef912a01ce1361ba1e4",
+          "version": "1.3.3"
         }
       },
       {
@@ -42,8 +51,17 @@
         "repositoryURL": "https://github.com/vapor/http.git",
         "state": {
           "branch": null,
-          "revision": "818d7d48bbb03e87fd5ac682bb6fa47c04148e6c",
-          "version": "3.1.3"
+          "revision": "24282b07c5b6fab13b7f2248eec45bc4e4e46eff",
+          "version": "3.1.10"
+        }
+      },
+      {
+        "package": "JSONUtilities",
+        "repositoryURL": "https://github.com/yonaskolb/JSONUtilities.git",
+        "state": {
+          "branch": null,
+          "revision": "db238f4858ac2ac3fff228b5b71ce90488a6a9b3",
+          "version": "4.1.0"
         }
       },
       {
@@ -51,8 +69,26 @@
         "repositoryURL": "https://github.com/vapor/multipart.git",
         "state": {
           "branch": null,
-          "revision": "e57007c23a52b68e44ebdfc70cbe882a7c4f1ec3",
-          "version": "3.0.2"
+          "revision": "bd7736c5f28e48ed8b683dcc9df3dcd346064c2b",
+          "version": "3.0.3"
+        }
+      },
+      {
+        "package": "PathKit",
+        "repositoryURL": "https://github.com/kylef/PathKit.git",
+        "state": {
+          "branch": null,
+          "revision": "e2f5be30e4c8f531c9c1e8765aa7b71c0a45d7a0",
+          "version": "0.9.2"
+        }
+      },
+      {
+        "package": "Rainbow",
+        "repositoryURL": "https://github.com/onevcat/Rainbow.git",
+        "state": {
+          "branch": null,
+          "revision": "797a68d0a642609424b08f11eb56974a54d5f6e2",
+          "version": "3.1.4"
         }
       },
       {
@@ -60,8 +96,8 @@
         "repositoryURL": "https://github.com/vapor/routing.git",
         "state": {
           "branch": null,
-          "revision": "3219e328491b0853b8554c5a694add344d2c6cfb",
-          "version": "3.0.1"
+          "revision": "626190ddd2bd9f967743b60ba6adaf90bbd2651c",
+          "version": "3.0.2"
         }
       },
       {
@@ -69,17 +105,26 @@
         "repositoryURL": "https://github.com/vapor/service.git",
         "state": {
           "branch": null,
-          "revision": "281a70b69783891900be31a9e70051b6fe19e146",
-          "version": "1.0.0"
+          "revision": "4907311d7d7f609365982fa302b8b17ffdeb46da",
+          "version": "1.0.1"
+        }
+      },
+      {
+        "package": "Spectre",
+        "repositoryURL": "https://github.com/kylef/Spectre.git",
+        "state": {
+          "branch": null,
+          "revision": "f14ff47f45642aa5703900980b014c2e9394b6e5",
+          "version": "0.9.0"
         }
       },
       {
         "package": "Html",
         "repositoryURL": "https://github.com/pointfreeco/swift-html.git",
         "state": {
-          "branch": "master",
-          "revision": "6d614a851189e99dfd5a09ad7136a6b85c78e9d9",
-          "version": null
+          "branch": null,
+          "revision": "f6fd8c99a790c930d0f22af3a06e02f37131a430",
+          "version": "0.3.0"
         }
       },
       {
@@ -87,8 +132,8 @@
         "repositoryURL": "https://github.com/apple/swift-nio.git",
         "state": {
           "branch": null,
-          "revision": "f42c836ba58e3e38688acdb75df986dff02717f1",
-          "version": "1.9.4"
+          "revision": "29a9f2aca71c8afb07e291336f1789337ce235dd",
+          "version": "1.13.2"
         }
       },
       {
@@ -96,8 +141,8 @@
         "repositoryURL": "https://github.com/apple/swift-nio-ssl.git",
         "state": {
           "branch": null,
-          "revision": "6617eb0d3afcb12170594968df01ca63afb58ac5",
-          "version": "1.2.0"
+          "revision": "0f3999f3e3c359cc74480c292644c3419e44a12f",
+          "version": "1.4.0"
         }
       },
       {
@@ -122,9 +167,27 @@
         "package": "SnapshotTesting",
         "repositoryURL": "https://github.com/pointfreeco/swift-snapshot-testing.git",
         "state": {
-          "branch": "69b48c8",
-          "revision": "69b48c8487ef8207170aee02485c40f9cafc79c8",
-          "version": null
+          "branch": null,
+          "revision": "1fb2e65cf62d2f983b3cab2871cbb218ea9ee9b7",
+          "version": "1.3.0"
+        }
+      },
+      {
+        "package": "SwiftCLI",
+        "repositoryURL": "https://github.com/jakeheis/SwiftCLI.git",
+        "state": {
+          "branch": null,
+          "revision": "5318c37d3cacc8780f50b87a8840a6774320ebdf",
+          "version": "5.2.2"
+        }
+      },
+      {
+        "package": "SwiftShell",
+        "repositoryURL": "https://github.com/kareman/SwiftShell",
+        "state": {
+          "branch": null,
+          "revision": "beebe43c986d89ea5359ac3adcb42dac94e5e08a",
+          "version": "4.1.2"
         }
       },
       {
@@ -132,8 +195,8 @@
         "repositoryURL": "https://github.com/vapor/template-kit.git",
         "state": {
           "branch": null,
-          "revision": "db35b1c35aabd0f5db3abca0cfda7becfe9c43e2",
-          "version": "1.1.0"
+          "revision": "aff2d6fc65bfd04579b0201b31a8d6720239c1cf",
+          "version": "1.1.1"
         }
       },
       {
@@ -141,8 +204,8 @@
         "repositoryURL": "https://github.com/vapor/url-encoded-form.git",
         "state": {
           "branch": null,
-          "revision": "cbfe7ef6301557d3f2d0807a98165232ae06e1c6",
-          "version": "1.0.4"
+          "revision": "932024f363ee5ff59059cf7d67194a1c271d3d0c",
+          "version": "1.0.5"
         }
       },
       {
@@ -150,8 +213,8 @@
         "repositoryURL": "https://github.com/vapor/validation.git",
         "state": {
           "branch": null,
-          "revision": "156f8adeac3440e868da3757777884efbc6ec0cc",
-          "version": "2.1.0"
+          "revision": "4de213cf319b694e4ce19e5339592601d4dd3ff6",
+          "version": "2.1.1"
         }
       },
       {
@@ -159,8 +222,8 @@
         "repositoryURL": "https://github.com/vapor/vapor.git",
         "state": {
           "branch": null,
-          "revision": "54632a6c1e7ecd9923c0d00b612de936de1c4745",
-          "version": "3.0.8"
+          "revision": "c86ada59b31c69f08a6abd4f776537cba48d5df6",
+          "version": "3.3.0"
         }
       },
       {
@@ -168,7 +231,34 @@
         "repositoryURL": "https://github.com/vapor/websocket.git",
         "state": {
           "branch": null,
-          "revision": "141cb4d3814dc8062cb0b2f43e72801b5dfcf272",
+          "revision": "21eb4773e25a8ff96fe347a31fe106900a69fa6a",
+          "version": "1.1.1"
+        }
+      },
+      {
+        "package": "XcodeGen",
+        "repositoryURL": "https://github.com/yonaskolb/XcodeGen.git",
+        "state": {
+          "branch": null,
+          "revision": "95bc051d268f6b8b924ae9c84e40566efe90cb80",
+          "version": "2.3.0"
+        }
+      },
+      {
+        "package": "xcodeproj",
+        "repositoryURL": "https://github.com/tuist/xcodeproj.git",
+        "state": {
+          "branch": null,
+          "revision": "8e15cc74149ee946b7ae125685177915b4ff7317",
+          "version": "6.4.0"
+        }
+      },
+      {
+        "package": "Yams",
+        "repositoryURL": "https://github.com/jpsim/Yams.git",
+        "state": {
+          "branch": null,
+          "revision": "26ab35f50ea891e8edefcc9d975db2f6b67e1d68",
           "version": "1.0.1"
         }
       }
