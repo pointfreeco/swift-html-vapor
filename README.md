@@ -1,6 +1,7 @@
 # swift-html-vapor
 
 [![Swift 5](https://img.shields.io/badge/swift-5-ED523F.svg?style=flat)](https://swift.org/download/)
+[![Swift 4.2](https://img.shields.io/badge/swift-4.2-ED523F.svg?style=flat)](https://swift.org/download/)
 [![Linux CI](https://img.shields.io/travis/pointfreeco/swift-html-vapor/master.svg?label=linux)](https://travis-ci.org/pointfreeco/swift-html-vapor)
 [![@pointfreeco](https://img.shields.io/badge/contact-@pointfreeco-5AA9E7.svg?style=flat)](https://twitter.com/pointfreeco)
 
