@@ -19,10 +19,11 @@ To use the plugin all you have to do is return a `Node` value from your router c
 import HtmlVaporSupport
 import Vapor
 
-let app = try Application()
-let router = try app.make(Router.self)
+var env = try Environment.detect()
+let app = Application(env)
+defer { app.shutdown() }
 
-router.get("/") { _ in
+app.get { _ in
   Node.h1("Hello, type-safe HTML on Vapor!")
 }
 
