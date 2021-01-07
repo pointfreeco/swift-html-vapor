@@ -53,7 +53,7 @@ If you want to use swift-html-vapor in a project that uses [SwiftPM](https://swi
 
 ``` swift
 dependencies: [
-  .package(url: "https://github.com/pointfreeco/swift-html-vapor.git", from: "0.3.0")
+  .package(name: "HtmlVaporSupport", url: "https://github.com/pointfreeco/swift-html-vapor.git", from: "0.4.0")
 ]
 ```
 
