@@ -1,22 +1,24 @@
 import HtmlVaporSupport
 import Vapor
 
-let app = try Application()
-let router = try app.make(Router.self)
+var env = try Environment.detect()
+try LoggingSystem.bootstrap(from: &env)
+let app = Application(env)
+defer { app.shutdown() }
 
-router.get("/") { _ in
+app.get { _ in
   layout(title: "Home", content: home)
 }
-
-router.get("/usage") { _ in
+ 
+app.get("usage") { _ in
   layout(title: "Usage", content: usage)
 }
-
-router.get("/advanced-usage") { _ in
+ 
+app.get("advanced-usage") { _ in
   layout(title: "Advanced Usage", content: advancedUsage)
 }
-
-router.get("/installation") { _ in
+ 
+app.get("installation") { _ in
   layout(title: "Installation", content: installation)
 }
 
