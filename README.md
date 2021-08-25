@@ -1,8 +1,8 @@
 # swift-html-vapor
 
 [![CI](https://github.com/pointfreeco/swift-html-vapor/actions/workflows/ci.yml/badge.svg)](https://github.com/pointfreeco/swift-html-vapor/actions/workflows/ci.yml)
-[![Swift 5.3](https://img.shields.io/badge/swift-5.3-ED523F.svg?style=flat)](https://swift.org/download/)
-[![@pointfreeco](https://img.shields.io/badge/contact-@pointfreeco-5AA9E7.svg?style=flat)](https://twitter.com/pointfreeco)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fpointfreeco%2Fswift-html-vapor%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/pointfreeco/swift-html-vapor)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fpointfreeco%2Fswift-html-vapor%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/pointfreeco/swift-html-vapor)
 
 [Vapor](https://vapor.codes) plugin for type-safe, transformable HTML views using [swift-html](https://github.com/pointfreeco/swift-html).
 
