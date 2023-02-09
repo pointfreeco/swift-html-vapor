@@ -12,3 +12,11 @@ extension Html.Node: ResponseEncodable {
     ))
   }
 }
+
+#if compiler(>=5.5) && canImport(_Concurrency)
+extension Html.Node: AsyncResponseEncodable {
+	public func encodeResponse(for request: Request) async throws -> Response {
+		try await encodeResponse(for: request).get()
+	}
+}
+#endif
