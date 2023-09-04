@@ -1,12 +1,12 @@
 import Html
 
 let usage: Node = [
-  .h2("Usage"),
-  .p("""
+    .h2("Usage"),
+    .p("""
 To use the plugin all you have to do is return a `Node` value from your router callback:
 """
-  ),
-  .pre(#"""
+      ),
+    .pre(#"""
 import HtmlVaporSupport
 import Vapor
 
@@ -19,5 +19,5 @@ router.get("/") { _ in
 
 try app.run()
 """#
-  ),
+        ),
 ]

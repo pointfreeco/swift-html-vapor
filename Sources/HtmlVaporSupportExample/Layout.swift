@@ -3,7 +3,7 @@ import Html
 // Functions that take nodes as input and return a new node can serve the purpose that "layouts" do in
 // most templating languages. You can have this function take additional arguments in order to customize
 // the layout, such as title and meta tags.
-func layout(title: String, content: Node) -> Node {
+func layout(title: String, content: Node, route: RootRoute) -> Node {
   return [
     .doctype,
     .html(
@@ -20,7 +20,7 @@ func layout(title: String, content: Node) -> Node {
           ])
       ),
       .body(
-        header,
+        header(route: route),
         .main(content),
         footer,
         // Load external scripts at the bottom of the document.
@@ -34,22 +34,68 @@ func layout(title: String, content: Node) -> Node {
 }
 
 // A node that represents the header to use on each page.
-let header: Node = [
-  .header(
-    .h1("swift-html-vapor"),
-    .blockquote(
-      "A Vapor plugin for type-safe, transformable HTML views using ",
-      .a(attributes: [.href("https://github.com/pointfreeco/swift-html")], "swift-html")
-    ),
-    .ul(attributes: [], [
-      .li(.a(attributes: [.href("/")], "Home")),
-      .li(.a(attributes: [.href("/usage")], "Usage")),
-      .li(.a(attributes: [.href("/advanced-usage")], "Advanced Usage")),
-      .li(.a(attributes: [.href("/installation")], "Installation"))
-      ]
-    )
-  )
-]
+//fileprivate func extractedFunc() -> Node {
+//
+//    RootRoute.allCases.map {  in
+//        here i want to get li then pass it
+//
+//        Attribute<Tag.Li>
+//    }
+//
+//    let advancedUsage: Node = [
+//        .ul(
+//            attributes: [],
+//            .li(.a(attributes: [.href("")], ""))
+//        )
+//    ]
+//
+//    Node.ul(attributes: [], pass here )
+//
+//    return .ul(
+//        attributes: [],
+//        .li(.a(attributes: [.href("/usage")], "Usage"))
+//    )
+//}
+
+func header(route: RootRoute) -> Node {
+    let dynamicLiList = RootRoute.allCases.map { route -> ChildOf<Tag.Ul> in
+        return .li(
+            .a(attributes: [Attribute<Tag.A>.href("/\(route.link)")], "\(route.rawValue.capitalized )")
+        )
+    }
+
+    return [
+        .header(
+            .h1("swift-html-vapor"),
+            .blockquote(
+                "A Vapor plugin for type-safe, transformable HTML views using ",
+                .a(attributes: [Attribute<Tag.A>.href("https://github.com/pointfreeco/swift-html")], "swift-html")
+            ),
+            .ul(attributes: [], .fragment(dynamicLiList))
+        )
+    ]
+}
+
+
+
+//func header(route: RootRoute) -> Node {
+//    print(route)
+//
+//    return [
+//        .header(
+//            .h1("swift-html-vapor"),
+//            .blockquote(
+//                "A Vapor plugin for type-safe, transformable HTML views using ",
+//                .a(attributes: [.href("https://github.com/pointfreeco/swift-html")], "swift-html")
+//            ),
+//            .ul(attributes: [],
+//                .li(.a(attributes: [.href("/usage")], "Usage")),
+//                .li(.a(attributes: [.href("/advanced-usage")], "Advanced Usage")),
+//                .li(.a(attributes: [.href("/installation")], "Installation"))
+//            )
+//        )
+//    ]
+//}
 
 // A node that represents the footer to use on each page.
 let footer: Node = [
